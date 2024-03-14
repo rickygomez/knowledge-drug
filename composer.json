@@ -1,0 +1,20 @@
+{
+    "name": "rickygomez/knowledge-drug",
+    "description": "API PHP to study Clean Architecture.",
+    "type": "project",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Ricardo Gómez",
+            "email": "rickygomez.rj@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rickygomez\\KnowledgeDrug\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1"
+    }
+}

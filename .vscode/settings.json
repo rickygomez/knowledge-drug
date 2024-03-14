@@ -1,0 +1,87 @@
+{
+    //* configurações basicas do editor
+    "editor.formatOnSave": true,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.hg/store/**": true,
+        "**/vendor/*/**": true
+    },
+    "editor.wordSeparators": "`~!@%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "json.schemaDownload.enable": false,
+    //* configurações do plugin de UML
+    "mermaid-editor.generate.outputPath": ".docs/",
+    "mermaid-editor.generate.type": "jpg",
+    "mermaid-editor.generate.scale": 2,
+    "emmet.triggerExpansionOnTab": true,
+    //*configurações do plugin .env
+    "files.associations": {
+        "*.env": "env",
+        "*.env.*": "env",
+        ".env": "env",
+        ".env.*": "env"
+    },
+    //* configurações de estilo e tema do editor
+    "editor.tabCompletion": "on",
+    "editor.bracketPairColorization.enabled": false,
+    "editor.guides.bracketPairs": "active",
+    "workbench.sideBar.location": "right",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.statusBar.visible": true,
+    "workbench.panel.defaultLocation": "bottom",
+    "files.autoSave": "afterDelay",
+    "peacock.remoteColor": "#004C00",
+    "RainbowBrackets.forceUniqueOpeningColor": false,
+    "RainbowBrackets.consecutivePairColors": [
+        "()",
+        "[]",
+        "{}",
+        [
+            "#F7D600",
+            "#1002CC",
+            "#B000A7",
+            "#05e20c",
+            "#D15C00",
+            "#0090A3"
+        ],
+        "Revioletd"
+    ],
+    "indentRainbow.colors": [
+        "rgba(247, 214, 0, 0.1)",
+        "rgba(16, 2, 204, 0.1)",
+        "rgba(176, 0, 167, 0.1)",
+        "rgba(5, 226, 12, 0.1)",
+        "rgba(209, 92, 0, 0.1)",
+        "rgba(0, 144, 163, 0.1)"
+    ],
+    "indentRainbow.errorColor": "rgba(128,32,32,0.6)",
+    "indentRainbow.indicatorStyle": "classic",
+    "rainbowTags.colors": [
+        "#F7D600",
+        "#1002CC",
+        "#B000A7",
+        "#05e20c",
+        "#D15C00",
+        "#0090A3"
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#007f00",
+        "activityBar.background": "#007f00",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#9f9fff",
+        "activityBarBadge.foreground": "#15202b",
+        "commandCenter.border": "#e7e7e799",
+        "sash.hoverBorder": "#007f00",
+        "statusBar.background": "#004c00",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#007f00",
+        "statusBarItem.remoteBackground": "#004c00",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "titleBar.activeBackground": "#004c00",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#004c0099",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    }
+}
