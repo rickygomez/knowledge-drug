@@ -14,6 +14,7 @@ Principais dados para cadatro
 
 ### Produto
 
+- Id: UUID V4 
 - Nome: Texto simples
 - Status: Lista predefinida (Rascunho, Publicado, Inativo)
 - Imagem: path da imagem
@@ -22,11 +23,27 @@ Principais dados para cadatro
 - Apresentações: Texto longo (formatável)
 - Composição: Texto longo (formatável)
 - Posologia: Texto longo (formatável)
+- observations: Texto longo (formatável)
 
 ### Laboratório
 
+- Id: UUID V4
 - Nome: Texto simples
 
 ### Patologia
 
+- Id: UUID V4
 - Nome: Texto simples
+
+## Installation
+
+~~~shell
+composer install
+~~~
+
+## Run 
+
+~~~shell
+php index.php
+~~~
+
