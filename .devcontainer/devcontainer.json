@@ -33,6 +33,8 @@
     // "remoteUser": "devcontainer"
     "extensions": [
         "xdebug.php-debug",
-        "tal7aouy.rainbow-bracket"
+        "tal7aouy.rainbow-bracket",
+        "streetsidesoftware.code-spell-checker",
+        "mhutchie.git-graph"
     ]
 }
