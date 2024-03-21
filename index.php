@@ -6,7 +6,10 @@ use Rickygomez\KnowledgeDrug\Entities\Laboratory;
 use Rickygomez\KnowledgeDrug\Entities\Pathology;
 use Rickygomez\KnowledgeDrug\Entities\Product;
 use Rickygomez\KnowledgeDrug\Enums\ProductStatuses;
+use Symfony\Component\ErrorHandler\Debug;
 use Symfony\Component\Uid\UuidV4;
+
+Debug::enable();
 
 $laboratory = new Laboratory(
     id: UuidV4::v4(),
