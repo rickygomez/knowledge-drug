@@ -11,25 +11,23 @@ use Symfony\Component\Uid\UuidV4;
 
 Debug::enable();
 
-$laboratory = new Laboratory(
-    id: UuidV4::v4(),
+$laboratory = Laboratory::create(
     name: 'Xpto farmo'
 );
 
-$pathology1 = new Pathology(
-    id: UuidV4::v4(),
+$pathology1 = Pathology::create(
     name: 'Anatomia do Sistema Nervoso Central'
 );
 
-$pathology2 = new Pathology(
-    id: UuidV4::v4(),
+$pathology2 = Pathology::create(
+    id: '8d952994-3b28-4a52-8817-f1610acebd4b',
     name: 'Virologia'
 );
 
-$product = new Product(
-    id: UuidV4::v4(),
+$product = Product::create(
+    id: '172ee9df-195d-44c2-a2a8-0598fe677cfc',
     name: 'Semancol',
-    status: ProductStatuses::DRAFT,
+    status: 'Rascunho',
     laboratory: $laboratory,
     pathology: [$pathology1, $pathology2],
     presentation: '5 cápsulas com 500mg; 10 cápsulas com 500mg; Quantidade de cepas = 20 bilhões de UFC',

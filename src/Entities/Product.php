@@ -7,7 +7,7 @@ use Symfony\Component\Uid\UuidV4;
 
 class Product
 {
-    public function __construct(
+    private function __construct(
         public readonly UuidV4 $id,
         public readonly string $name,
         public readonly ProductStatuses $status,
@@ -19,5 +19,31 @@ class Product
         public readonly ?string $image = null,
         public readonly ?string $observations = null,
     ) {}
+
+    public static function create(
+        string $name,
+        string $status,
+        Laboratory $laboratory,
+        array $pathology,
+        string $presentation,
+        string $composition,
+        string $posology,
+        ?string $image = null,
+        ?string $observations = null,
+        ?string $id = null
+    ): Product {
+        return new Product(
+            id: empty($id) ? UuidV4::v4() : new UuidV4($id),
+            name: $name,
+            status: ProductStatuses::tryFrom($status),
+            laboratory: $laboratory,
+            pathology: $pathology,
+            presentation: $presentation,
+            composition: $composition,
+            posology: $posology,
+            image: $image,
+            observations: $observations,
+        );
+    }
 
 }
