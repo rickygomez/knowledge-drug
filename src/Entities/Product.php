@@ -13,10 +13,10 @@ class Product
         public readonly ProductStatuses $status,
         public readonly Laboratory $laboratory,
         public readonly array $pathology,
-        public readonly ?string $image = null,
         public readonly string $presentation,
         public readonly string $composition,
         public readonly string $posology,
+        public readonly ?string $image = null,
         public readonly ?string $observations = null,
     ) {}
 
