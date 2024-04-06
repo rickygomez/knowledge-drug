@@ -12,7 +12,7 @@ class Product
         public readonly string $name,
         public readonly ProductStatuses $status,
         public readonly Laboratory $laboratory,
-        public readonly array $pathology,
+        public readonly Pathologies $pathologies,
         public readonly string $presentation,
         public readonly string $composition,
         public readonly string $posology,
@@ -24,20 +24,27 @@ class Product
         string $name,
         string $status,
         Laboratory $laboratory,
-        array $pathology,
         string $presentation,
         string $composition,
         string $posology,
+        ?array $pathologies = [],
         ?string $image = null,
         ?string $observations = null,
         ?string $id = null
     ): Product {
+        $pathologiesAggregate = new Pathologies();
+        foreach ($pathologies as $pathology) {
+            if($pathology instanceof Pathology){
+                $pathologiesAggregate->addItem($pathology);
+            }
+        }
+
         return new Product(
             id: empty($id) ? UuidV4::v4() : new UuidV4($id),
             name: $name,
             status: ProductStatuses::tryFrom($status),
             laboratory: $laboratory,
-            pathology: $pathology,
+            pathologies: $pathologiesAggregate,
             presentation: $presentation,
             composition: $composition,
             posology: $posology,
