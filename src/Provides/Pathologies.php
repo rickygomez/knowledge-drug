@@ -1,6 +1,6 @@
 <?php
 
-namespace Rickygomez\KnowledgeDrug\Entities;
+namespace Rickygomez\KnowledgeDrug\Provides;
 
 use IteratorAggregate;
 use Rickygomez\KnowledgeDrug\Entities\Pathology;

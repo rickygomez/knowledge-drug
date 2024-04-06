@@ -3,6 +3,7 @@
 namespace Rickygomez\KnowledgeDrug\Entities;
 
 use Rickygomez\KnowledgeDrug\Enums\ProductStatuses;
+use Rickygomez\KnowledgeDrug\Provides\Pathologies;
 use Symfony\Component\Uid\UuidV4;
 
 class Product
